@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Floor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Walls.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Ramp.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Ball.tscn" type="PackedScene" id=5]
 
 [node name="Main" type="Spatial"]
 
@@ -24,4 +26,13 @@ transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 0, 1,
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, -32 )
 
 [node name="Ramp" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1.05, 0, 0, 0, 0.909327, -0.525, 0, 0.44625, 0.772928, 0, 8, -15 )
+transform = Transform( 1.05, 0, 0, 0, 0.909327, -0.525, 0, 0.44625, 0.772928, 0, 7, -14 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 0.0871558, -0.996195, 0, 0.996195, 0.0871558, 0, 2, 0 )
+
+[node name="Ball" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.5258, -32.5729 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.938219, -0.0256943, 0.345086, -0.157899, 0.855582, 0.492998, -0.307917, -0.517029, 0.798666, 16, 15, 25 )
