@@ -24,7 +24,7 @@ transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 0, 1,
 transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 0, 1, -9 )
 
 [node name="EndPlatform" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, -32 )
+transform = Transform( 0.5, 0, 0, 0, 1, 0, 0, 0, 3.05, 0, 12.0557, -51.9236 )
 
 [node name="Ramp" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1.05, 0, 0, 0, 0.818394, -0.4725, 0, 0.44625, 0.772928, 0, 7, -12 )
@@ -37,4 +37,4 @@ script = ExtResource( 5 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 13.5258, -32.5729 )
 
 [node name="Camera" type="Camera" parent="."]
-transform = Transform( 0.658563, -0.280767, 0.698187, -0.221425, 0.814421, 0.536367, -0.719212, -0.507827, 0.474179, 28, 22, 8 )
+transform = Transform( 0.681045, -0.650361, 0.336464, 0.137522, 0.564926, 0.813601, -0.719212, -0.507828, 0.474179, 1, 29, 0 )
